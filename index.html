@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>StartBiz Marketing Ideas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+
+<header>
+  <button id="menuBtn">⋮</button>
+  <h1>StartBiz Ideas</h1>
+</header>
+
+<!-- MENU TITIK 3 -->
+<div id="menu" class="hidden">
+  <p onclick="openSettings()">⚙️ Setelan</p>
+  <p onclick="toggleTheme()">🎨 Tema</p>
+  <p onclick="logout()">🚪 Log Out</p>
+</div>
+
+<!-- POST IDE -->
+<section class="post-box">
+  <textarea id="ideaInput" placeholder="Tulis ide bisnis digital marketing..."></textarea>
+  <button onclick="postIdea()">Posting Ide</button>
+</section>
+
+<!-- FEED -->
+<section id="feed"></section>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
